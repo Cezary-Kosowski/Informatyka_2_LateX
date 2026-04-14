@@ -1,0 +1,41 @@
+\documentclass{report}
+
+\usepackage[T1]{fontenc}
+\usepackage[polish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{amsmath,amssymb}
+\usepackage{makeidx}
+\usepackage{acronym}
+\usepackage{array}
+\usepackage{hyperref}
+
+
+
+\title{Malware: Złośliwe oprogramowanie w pigułce\\[0.3cm] \small wersja prezentacji \cite{prezentacja} zmodyfikowana do klasy dokumentu \texttt{report} na potrzeby projeku z kodu LateX}
+\author{Cezary Kosowski}
+\date{13.04.2026}
+\makeindex
+\begin{document}
+\maketitle
+\newpage
+\tableofcontents
+\listoftables
+\listoffigures
+\chapter*{Wykaz skrótów}
+\addcontentsline{toc}{chapter}{Wykaz skrótów}
+\begin{acronym}
+    \acro{AI}{Sztuczna Inteligencja (ang. \textit{Artificial Inteligence})}
+    \acro{BIOS}{Basic Input/Output System}
+    \acro{IT}{Informatyka (ang. \textit{Information Technology}}
+    \acro{malware}{złośliwe oprogramowanie (ang. \textit{Malicious software}}
+\end{acronym}
+\input{rozdział_1}
+\input{rozdział_2}
+\input{rozdział_3}
+\input{rozdzial_4}
+\appendix
+\input{zalaczniki}
+\printindex
+
+\end{document}
